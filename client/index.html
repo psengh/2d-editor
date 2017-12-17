@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,
+                user-scalable=no" />
+    <title>2D Editor</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Walter+Turncoat" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+</head>
+
+<body ng-app="app">
+
+    <!-- $stateProvider maps Controller to View -->
+    <div ui-view></div>
+
+    <!-- inject-vendor:js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="bower_components/fabric.js/dist/fabric.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <!-- Bootstrapping -->
+    <script src="app/app.js"></script>
+    <script src="app/app.config.js"></script>
+
+    <!-- Editor Module -->
+    <script src="app/editor/editor.controller.js"></script>
+
+    <!-- Components -->
+    <script src="app/components/ui-fabric/src/fabric.js"></script>
+    <script src="app/components/ui-fabric/src/fabricCanvas.js"></script>
+    <script src="app/components/ui-fabric/src/fabricConstants.js"></script>
+    <script src="app/components/ui-fabric/src/fabricDirective.js"></script>
+    <script src="app/components/ui-fabric/src/fabricDirtyStatus.js"></script>
+    <script src="app/components/ui-fabric/src/fabricUtilities.js"></script>
+    <script src="app/components/ui-fabric/src/fabricWindow.js"></script>
+
+    <!-- endinject -->
+
+</body>
+
+</html>

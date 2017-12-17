@@ -1,0 +1,11 @@
+{
+  "name": "2d-editor",
+  "version": "1.0.0",
+  "description": "Angular project for creating and nediting images using fabric.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prabjot Singh",
+  "license": "ISC"
+}

@@ -1,0 +1,102 @@
+<div>
+
+    <uib-accordion close-others="false">
+
+        <div uib-accordion-group class="panel-default" is-open="!fabric.selectedObject">
+
+            <uib-accordion-heading>
+                Canvas
+            </uib-accordion-heading>
+
+
+            <div>
+                <form name="canvasForm">
+
+                    <div class="form-group">
+                        <label> Background Color </label>
+                        <input id="format-canvas-clr" type="text" ng-change='fabric.setDirty(true); fabric.stopContinuousRendering()' ng-model="fabric.canvasBackgroundColor"
+                            class="form-control form-content" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div uib-accordion-group class="panel-default" is-open="fabric.selectedObject.type == 'text'">
+
+            <uib-accordion-heading>
+                Font
+            </uib-accordion-heading>
+
+
+            <div>
+                <form name="shapeForm">
+
+                    <div class="form-group">
+                        <label> Text </label>
+                        <input id="format-shape-name" type="text" ng-model="fabric.selectedObject.text" class="form-control form-content" />
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label> Font </label>
+                        <select ng-model="fabric.selectedObject.fontFamily" class="form-control form-content" ng-options="opt.name as opt.name for opt in FabricConstants.fonts">
+                        </select>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label> Font Color </label>
+                        <input id="format-color" type="text" ng-model="fabric.selectedObject.fill" class="form-control form-content" />
+                    </div>
+
+                    <div class="form-group">
+                        <label> Font Size</label>
+                        <input type='number' ng-model="fabric.selectedObject.fontSize" class="form-control form-content" />
+                    </div>
+
+                    <label> Font Style </label>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.isBold() }" ng-click="fabric.toggleBold()" uib-tooltip="Bold">
+                            <span class="fa fa-bold fa-fw"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.isItalic() }" ng-click="fabric.toggleItalic()" uib-tooltip="Italic">
+                            <span class="fa fa-italic fa-fw"></span>
+                        </button>
+
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.isUnderline() }" ng-click="fabric.toggleUnderline()"
+                            uib-tooltip="Underline">
+                            <span class='fa fa-underline fa-fw'></span>
+                        </button>
+
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.isLinethrough() }" ng-click="fabric.toggleLinethrough()"
+                            uib-tooltip="Strike">
+                            <span class='fa fa-strikethrough fa-fw'></span>
+                        </button>
+                    </div>
+
+                    <!-- <hr> -->
+
+                    <label> Alignment </label>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.selectedObject.textAlign == 'left' }" ng-click="fabric.selectedObject.textAlign = 'left'"
+                            uib-tooltip="Align Left}">
+                            <span class="fa fa-align-left fa-fw"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.selectedObject.textAlign == 'center' }" ng-click="fabric.selectedObject.textAlign = 'center'"
+                            uib-tooltip="Align Center">
+                            <span class="fa fa-align-center fa-fw"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" ng-class="{ active: fabric.selectedObject.textAlign == 'right' }" ng-click="fabric.selectedObject.textAlign = 'right'"
+                            uib-tooltip="Align Left">
+                            <span class="fa fa-align-right fa-fw"></span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </uib-accordion>
+
+</div>
