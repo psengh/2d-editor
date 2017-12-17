@@ -1,6 +1,6 @@
 # 2D Diagram Editor
 
-MyEAN Stack project for creating and nediting images using [fabric.js](http://fabricjs.com/).
+MyEAN Stack project for creating and editing images using [fabric.js](http://fabricjs.com/).
 
 ## Running Locally
 
@@ -27,5 +27,5 @@ db: {
     host: 'localhost',
     user: 'root'
     password: 'password'
-}
+  }
 ```
