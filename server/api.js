@@ -36,7 +36,7 @@ router.get('/diagram/:id', function (req, res, next) {
       if (err) return next(err);
       console.log(result, err);
       return res.status(200).send({
-        result: result
+        result: result[0]
       })
     }
   );
