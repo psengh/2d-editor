@@ -31,3 +31,12 @@ db: {
     password: 'password'
   }
 ```
+## Notes
+
+- Undo and Redo buttons are disabled right after performing the action for a few seconds, to prevent rapid clicking.
+
+## Bugs - ToDo's
+
+- Font color does not change, need to fix the scope watch
+- Edit and Save a perviously saved diagram i.e, implement UPSERT in MySQL queries
+
