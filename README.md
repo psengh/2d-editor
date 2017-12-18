@@ -9,11 +9,13 @@ Make sure you have [Node.js](http://nodejs.org/), [Bower](https://bower.io/), [M
 ```sh
 git clone https://github.com/prabjot-singh/2d-editor.git # or clone your own fork
 
-cd 2d-editor/client
+cd 2d-editor
+
+cd client
 npm install
 bower install
 
-cd 2d-editor/server
+cd .. && cd server
 npm install
 npm start
 ```
