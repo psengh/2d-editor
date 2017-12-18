@@ -4,9 +4,9 @@
   angular.module('app')
     .controller('EditorController', EditorController);
 
-  EditorController.$inject = ['$scope', 'editorService', 'Fabric', 'FabricConstants', 'Keypress'];
+  EditorController.$inject = ['$scope', 'editorService', 'Fabric', 'FabricConstants'];
 
-  function EditorController($scope, editorService, Fabric, FabricConstants, Keypress) {
+  function EditorController($scope, editorService, Fabric, FabricConstants) {
 
     $scope.file = {};
     $scope.fabric = {};
@@ -164,11 +164,6 @@
     }
 
     $scope.$on('canvas:created', $scope.init);
-
-    Keypress.onSave(function () {
-      $scope.updatePage();
-    });
-
 
   }
 

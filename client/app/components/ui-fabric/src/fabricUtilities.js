@@ -19,26 +19,26 @@ angular.module('ui.fabric.utilities', [])
 	};
 }])
 
-.factory('Keypress', [function() {
-	var self = {};
+// .factory('Keypress', [function() {
+// 	var self = {};
 
-	self.onSave = function(cb) {
-		$(document).keydown(function(event) {
-			// If Control or Command key is pressed and the S key is pressed
-			// run save function. 83 is the key code for S.
-			if((event.ctrlKey || event.metaKey) && event.which === 83) {
-				// Save Function
-				event.preventDefault();
+// 	self.onSave = function(cb) {
+// 		$(document).keydown(function(event) {
+// 			// If Control or Command key is pressed and the S key is pressed
+// 			// run save function. 83 is the key code for S.
+// 			if((event.ctrlKey || event.metaKey) && event.which === 83) {
+// 				// Save Function
+// 				event.preventDefault();
 
-				cb();
+// 				cb();
 
-				return false;
-			}
-		});
-	};
+// 				return false;
+// 			}
+// 		});
+// 	};
 
-	return self;
-}])
+// 	return self;
+// }])
 
 .filter('reverse', [function() {
 	return function(items) {
