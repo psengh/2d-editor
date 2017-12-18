@@ -74,6 +74,13 @@
       }
     });
 
+    $scope.$watch('fabric.selectedObject.textAlign', function (newVal) {
+      if (typeof newVal === 'string') {
+        $scope.fabric.setTextAlign(newVal);
+        $scope.fabric.render();
+      }
+    });
+
     //
     // Creating Canvas Objects
     // ================================================================

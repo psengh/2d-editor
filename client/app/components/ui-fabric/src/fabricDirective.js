@@ -31,13 +31,6 @@ angular.module('ui.fabric.directive', [
 					}
 				});
 
-				$scope.$watch('fabric.selectedObject.textAlign', function (newVal) {
-					if (typeof newVal === 'string') {
-						$scope.fabric.setTextAlign(newVal);
-						$scope.fabric.render();
-					}
-				});
-
 				$scope.$watch('fabric.selectedObject.opacity', function (newVal) {
 					if (typeof newVal === 'string' || typeof newVal === 'number') {
 						$scope.fabric.setOpacity(newVal);
