@@ -2,6 +2,10 @@
 
 MyEAN Stack project for creating and editing images using [fabric.js](http://fabricjs.com/).
 
+## Wroking Demo
+
+For demo please visit this [link](https://prabjots-2d-editor.herokuapp.com/).
+
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/), [Bower](https://bower.io/), [MySQL](https://www.mysql.com/) installed.
