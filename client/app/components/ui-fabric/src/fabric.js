@@ -918,9 +918,12 @@ angular.module('ui.fabric', [
 					});
 
 					// canvas.on('object:added', function () {
-					// 	console.log('Added');
 					// 	self.updateState();
-					// });
+          // });
+
+					canvas.on('object:removed', function () {
+						self.updateState();
+					});
 
 					canvas.on('object:modified', function () {
 						self.stopContinuousRendering();

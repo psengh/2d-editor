@@ -15,7 +15,7 @@ cd client
 npm install
 bower install
 
-cd .. && cd server
+cd ..
 npm install
 npm start
 ```

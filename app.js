@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 
-app.use('/', express.static('../client'));
+app.use('/', express.static('./client'));
 
 
 app.use('/api', api);
