@@ -11,7 +11,7 @@ For demo please visit this [link](https://prabjots-2d-editor.herokuapp.com/).
 Make sure you have [Node.js](http://nodejs.org/), [Bower](https://bower.io/), [MySQL](https://www.mysql.com/) installed.
 
 ```sh
-git clone https://github.com/prabjot-singh/2d-editor.git # or clone your own fork
+git clone https://github.com/prabjot-singh/2d-editor.git -b test # or clone your own fork
 
 cd 2d-editor
 
