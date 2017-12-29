@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "cd client && npm install && bower install"
+    "postinstall": "cd client && bower install"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
+    "bower": "^1.8.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
